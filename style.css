@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+   background: linear-gradient(285deg, rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.463)), url(barber-shop.jpg) no-repeat center /cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(136, 135, 133);
+    text-align: center;
+    padding: 0.2em;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.quote-content {
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    margin-top: 0.6em;
+    background-color: rgba(116, 113, 110, 0.559);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0 0.5em;
+    position: relative;
+}
+
+.quote {
+    margin-top: 2em;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.author {
+    margin-left: 7em;
+    font-weight: 600;
+}
+
+button {
+    margin-top: 0.3em;
+    width: 400px;
+    text-align: center;
+    padding: 0.3em 0.8em;
+    background-color:rgba(0, 0, 0, 0.7) ;
+    font-size: 1.1em;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: rgba(240, 248, 255, 0.692);
+    cursor: pointer;
+}
+
+.fa-volume-up {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    cursor: pointer;
+    opacity: 0.7;
+
+}
+
+.fa-volume-up:hover{
+    opacity: 1;
+    scale: 1.2;
+}
+
+.listen {
+    position: absolute;
+    bottom: 15px;
+    left: 39px;
+    text-transform: capitalize;
+}
+
