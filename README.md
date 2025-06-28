@@ -1,26 +1,20 @@
+#!/bin/bash
+# We Install Apache HTTP Server
+sudo apt update -y
+sudo apt install apache2 -y
 
-sudo apt install httpd -y
+# We Enable and start Apache
+sudo systemctl enable apache2
+sudo systemctl start apache2
 
-sudo systemctl enable httpd
-
-sudo systemctl start httpd
-
+# We Install Git
 sudo apt install git -y
 
-sudo mkdir -p /home/ubuntu/demo
+# We Clone the repository
+mkdir -p /home/ubuntu/demo
+cd /home/ubuntu/demo
+git clone https://github.com/ooghenekaro/cohort-quote-generator-static-demo.git
 
-sudo cd /home/ubuntu/demo
-
-sudo git clone https://github.com/ooghenekaro/cohort-quote-generator-static-demo.git
-
-sudo cd cohort-quote-generator-static-demo
-
-sudo cp index.html /var/www/html/
-
-sudo cp barber-shop.png /var/www/html/
-
-sudo cp quote.js /var/www/html/
-
-sudo cp style.css /var/www/html/
-
-copy your server ip and paste on a browser to test your application.
+# we Copy the static files to Apache's web root
+cd cohort-quote-generator-static-demo
+cp index.html barber-shop.jpg quote.js style.css /var/www/html/
